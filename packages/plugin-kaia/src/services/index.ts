@@ -1,41 +1,21 @@
-import type { GetAccountResponse } from "../types";
+import {API_DEFAULTS} from "../constants"
+import { AccountService } from "./account";
 
-const BASE_URL = "https://mainnet-oapi.kaiascan.io/api/v1";
+export class KaiaScanService {
+    private accountService: AccountService ;
+    private config: any;
+    // private transactionService;
 
-export const createKaiascanService = (apiKey: string) => {
+    constructor(config) {
+        this.config = {
+            apiKey: config.apiKey,
+        };
 
-    const getCurrentBalance = async (
-        accountAddress: string
-    ): Promise<GetAccountResponse> => {
-        if (!apiKey || !accountAddress) {
-            throw new Error("Invalid parameters");
-        }
+        this.accountService = new AccountService(this.config);
+        // this.transactionService = new TransactionService(this.config);
+    }
 
-        try {
-
-            const url = new URL(`${BASE_URL}/accounts/${accountAddress}`);
-
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Accept': '*/*',
-			        'Authorization': `Bearer ${apiKey}`
-                }
-            });
-
-            if (!response.ok) {
-                const error = await response.json();
-                throw new Error(error?.message || response.statusText);
-            }
-
-            const data = await response.json();
-
-            return data;
-        } catch (error) {
-            console.error("Kaiascan API Error:", error.message);
-            throw error;
-        }
-    };
-
-    return { getCurrentBalance };
-};
+    async getCurrentBalance(accountAddress: string, network: string) {
+        return this.accountService.getCurrentBalance(accountAddress, network);
+    }
+}

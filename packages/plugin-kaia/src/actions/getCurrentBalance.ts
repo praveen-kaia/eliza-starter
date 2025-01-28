@@ -12,7 +12,8 @@ import {
 import { validateKaiascanConfig } from "../environment";
 import { getCurrentBalanceTemplate } from "../templates";
 import { getCurrentBalanceExamples } from "../examples";
-import { createKaiascanService } from "../services";
+import { KaiaScanService } from "../services";
+import { API_DEFAULTS } from "../constants";
 
 export const getCurrentBalanceAction: Action = {
     name: "GET_CURRENT_BALANCE",
@@ -66,14 +67,17 @@ export const getCurrentBalanceAction: Action = {
 
         // Instantiate API service
         const config = await validateKaiascanConfig(runtime);
-        const kaiascanService = createKaiascanService(
-            config.KAIASCAN_API_KEY
+        const kaiascanService = new KaiaScanService({
+            apiKey: config.KAIASCAN_API_KEY,
+            baseUrl: API_DEFAULTS.BASE_URL.mainnet,
+        }
         );
 
-        // Fetch weather & respond
+        // Fetch Account Balance & respond
         try {
             const kaiascanData = await kaiascanService.getCurrentBalance(
-                String(content?.address || "")
+                String(content?.address || ""),
+                String(content?.network || "mainnet")
             );
             elizaLogger.success(
                 `Successfully fetched balance for ${content.address}`
@@ -81,7 +85,7 @@ export const getCurrentBalanceAction: Action = {
 
             if (callback) {
                 callback({
-                    text: `The current balance of ${content.address} is ${kaiascanData.balance} KAIA, Let's play and build some MiniDapps on LINE.`,
+                    text: `The current balance of ${content.address} is ${kaiascanData.balance} KAIA on ${kaiascanData.network}, Let's play and build some MiniDapps on LINE.`,
                     content: kaiascanData,
                 });
 
