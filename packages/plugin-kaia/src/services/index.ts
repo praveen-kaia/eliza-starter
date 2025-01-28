@@ -1,8 +1,9 @@
-import type { GetAccountResponse } from "./types";
+import type { GetAccountResponse } from "../types";
 
 const BASE_URL = "https://mainnet-oapi.kaiascan.io/api/v1";
 
 export const createKaiascanService = (apiKey: string) => {
+
     const getCurrentBalance = async (
         accountAddress: string
     ): Promise<GetAccountResponse> => {
@@ -21,7 +22,7 @@ export const createKaiascanService = (apiKey: string) => {
 			        'Authorization': `Bearer ${apiKey}`
                 }
             });
-            console.log(response);
+
             if (!response.ok) {
                 const error = await response.json();
                 throw new Error(error?.message || response.statusText);
