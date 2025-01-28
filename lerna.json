@@ -1,9 +1,7 @@
 {
     "version": "0.1.8+build.1",
     "packages": [
-        "packages/*",
-        "client",
-        "!packages/_examples"
+        "packages/*"
     ],
     "npmClient": "pnpm"
 }
