@@ -10,7 +10,7 @@ import {
     type State,
 } from "@elizaos/core";
 import { validateKaiascanConfig } from "../environment";
-import { getCurrentBalanceTemplate } from "../templates";
+import { getCurrentBalanceTemplate } from "../templates/getCurrentBalance";
 import { getCurrentBalanceExamples } from "../examples";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
