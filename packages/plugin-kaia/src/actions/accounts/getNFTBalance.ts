@@ -9,11 +9,11 @@ import {
     ModelClass,
     type State,
 } from "@elizaos/core";
-import { validateKaiaScanConfig } from "../environment";
-import { getAddressTemplate } from "../templates/getAddress";
-import { getNFTBalanceExamples } from "../examples/getNFTBalance";
-import { KaiaScanService } from "../services";
-import { API_DEFAULTS } from "../constants";
+import { validateKaiaScanConfig } from "../../environment";
+import { getAddressTemplate } from "../../templates/getAddress";
+import { getNFTBalanceExamples } from "../../examples/getNFTBalance";
+import { KaiaScanService } from "../../services";
+import { API_DEFAULTS } from "../../constants";
 
 export const getNFTBalanceAction: Action = {
     name: "GET_NFT_BALANCE",

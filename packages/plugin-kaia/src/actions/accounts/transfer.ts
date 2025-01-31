@@ -11,10 +11,10 @@ import {
     type State,
 } from "@elizaos/core";
 
-import { initWalletProvider, WalletProvider } from "../providers/wallet";
-import type { Transaction, TransferParams } from "../types/account";
-import { transferTemplate } from "../templates/transfer";
-import { transferExamples } from "../examples/transfer";
+import { initWalletProvider, WalletProvider } from "../../providers/wallet";
+import type { Transaction, TransferParams } from "../../types/account";
+import { transferTemplate } from "../../templates/transfer";
+import { transferExamples } from "../../examples/transfer";
 
 // Exported for tests
 export class TransferAction {

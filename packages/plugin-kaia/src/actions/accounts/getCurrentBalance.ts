@@ -9,11 +9,11 @@ import {
     ModelClass,
     type State,
 } from "@elizaos/core";
-import { validateKaiaScanConfig } from "../environment";
-import { getAddressTemplate } from "../templates/getAddress";
-import { getCurrentBalanceExamples } from "../examples/getCurrentBalance";
-import { KaiaScanService } from "../services";
-import { API_DEFAULTS } from "../constants";
+import { validateKaiaScanConfig } from "../../environment";
+import { getAddressTemplate } from "../../templates/getAddress";
+import { getCurrentBalanceExamples } from "../../examples/getCurrentBalance";
+import { KaiaScanService } from "../../services";
+import { API_DEFAULTS } from "../../constants";
 
 export const getCurrentBalanceAction: Action = {
     name: "GET_CURRENT_BALANCE",

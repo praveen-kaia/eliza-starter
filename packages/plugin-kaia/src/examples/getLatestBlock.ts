@@ -12,6 +12,7 @@ export const getLatestBlockExamples: ActionExample[][] = [
             user: "{{agent}}",
             content: {
                 text: "In which network?",
+                action: "NONE",
             },
         },
         {

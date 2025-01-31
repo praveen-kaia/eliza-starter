@@ -12,7 +12,7 @@ Example responses:
 \`\`\`json
 {
     "address": "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
-    "network": "mainnet"
+    "network": "kaia"
 }
 \`\`\`
 \`\`\`json
@@ -24,7 +24,7 @@ Example responses:
 \`\`\`json
 {
     "address": "0xa1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
-    "network": "mainnet"
+    "network": "kaia"
 }
 \`\`\
 
@@ -32,5 +32,5 @@ Example responses:
 
 Extract the Kaia EVM address from the most recent message. Respond with a JSON markdown block containing both "address" and "network".
 
-If there is no mention of network in the message, assume it's the mainnet.`;
+If there is no mention of network in the message, assume it's the kaia.`;
 
