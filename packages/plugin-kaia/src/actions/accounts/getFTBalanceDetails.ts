@@ -15,7 +15,7 @@ import { getFTBalanceDetailsExamples } from "../../examples/getFTBalanceDetails"
 import { KaiaScanService } from "../../services";
 import { API_DEFAULTS } from "../../constants";
 
-export const getFTBalanceDetails: Action = {
+export const getFTBalanceDetailsAction: Action = {
     name: "GET_FT_BALANCE_DETAILS",
     similes: [
         "FUNGIBLE_TOKEN_BALANCE",
@@ -44,7 +44,7 @@ export const getFTBalanceDetails: Action = {
         state = await runtime.updateRecentMessageState(state);
 
         // state -> context
-        const balanceContext = composeContext({
+        const fTBalanceContext = composeContext({
             state,
             template: getAddressTemplate,
         });
@@ -52,7 +52,7 @@ export const getFTBalanceDetails: Action = {
         // context -> content
         const content = await generateMessageResponse({
             runtime,
-            context: balanceContext,
+            context: fTBalanceContext,
             modelClass: ModelClass.SMALL,
         });
 
@@ -72,7 +72,7 @@ export const getFTBalanceDetails: Action = {
         }
         );
 
-        // Fetch Account Balance & respond
+        // Fetch Fungible Token Details & respond
         try {
             const kaiaScanData = await kaiaScanService.getFTBalanceDetails(
                 String(content?.address || "")
@@ -100,7 +100,7 @@ export const getFTBalanceDetails: Action = {
             elizaLogger.error("Error in GET_FT_BALANCE_DETAILS handler:", error);
 
             callback({
-                text: `Error fetching balance: ${error.message}`,
+                text: `Error fetching FT Balance: ${error.message}`,
                 content: { error: error.message },
             });
 
