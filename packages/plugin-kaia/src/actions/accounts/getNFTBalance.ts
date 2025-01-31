@@ -46,7 +46,7 @@ export const getNFTBalanceAction: Action = {
         state = await runtime.updateRecentMessageState(state);
 
         // state -> context
-        const balanceContext = composeContext({
+        const nFTalanceContext = composeContext({
             state,
             template: getAddressTemplate,
         });
@@ -54,7 +54,7 @@ export const getNFTBalanceAction: Action = {
         // context -> content
         const content = await generateMessageResponse({
             runtime,
-            context: balanceContext,
+            context: nFTalanceContext,
             modelClass: ModelClass.SMALL,
         });
 
@@ -74,7 +74,7 @@ export const getNFTBalanceAction: Action = {
         }
         );
 
-        // Fetch Account Balance & respond
+        // Fetch NFT Balance & respond
         try {
             const kaiaScanData = await kaiaScanService.getNFTBalance(
                 String(content?.address || "")
@@ -102,7 +102,7 @@ export const getNFTBalanceAction: Action = {
             elizaLogger.error("Error in GET_NFT_BALANCE handler:", error);
 
             callback({
-                text: `Error fetching balance: ${error.message}`,
+                text: `Error fetching NFT Balance: ${error.message}`,
                 content: { error: error.message },
             });
 
