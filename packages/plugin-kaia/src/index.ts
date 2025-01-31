@@ -9,7 +9,8 @@ import {
   transferAction,
   getBlockAction,
   getTransactionsByAccountAction,
-  // getTransactionsByBlockNumberAction
+  // getTransactionsByBlockNumberAction,
+  getKaiaInfoAction
 } from "./actions";
 
 export * as actions from "./actions";
@@ -27,7 +28,8 @@ export const kaiaPlugin: Plugin = {
     transferAction,
     getBlockAction,
     getTransactionsByAccountAction,
-    // getTransactionsByBlockNumberAction
+    // getTransactionsByBlockNumberAction,
+    getKaiaInfoAction
   ],
   evaluators: [],
   providers: [],

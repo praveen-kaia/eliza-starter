@@ -8,3 +8,4 @@ export * from "./transactions/getLatestBlock.ts";
 export * from "./transactions/getBlockInfo.ts";
 export * from "./transactions/getTransactionsByAccount.ts";
 // export * from "./transactions/getTransactionsByBlockNumber.ts";
+export * from "./kaia-info/getKaiaInfo.ts";
