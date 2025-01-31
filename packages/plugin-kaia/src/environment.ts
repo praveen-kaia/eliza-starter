@@ -1,28 +1,28 @@
 import type { IAgentRuntime } from "@elizaos/core";
 import { z } from "zod";
 
-export const kaiascanEnvSchema = z.object({
-    KAIASCAN_API_KEY: z.string().min(1, "Kaiascan API key is required"),
+export const kaiaScanEnvSchema = z.object({
+    KAIASCAN_API_KEY: z.string().min(1, "KaiaScan API key is required"),
 });
 
-export type KaiascanConfig = z.infer<typeof kaiascanEnvSchema>;
+export type KaiaScanConfig = z.infer<typeof kaiaScanEnvSchema>;
 
-export async function validateKaiascanConfig(
+export async function validateKaiaScanConfig(
     runtime: IAgentRuntime
-): Promise<KaiascanConfig> {
+): Promise<KaiaScanConfig> {
     try {
         const config = {
             KAIASCAN_API_KEY: runtime.getSetting("KAIASCAN_API_KEY"),
         };
 
-        return kaiascanEnvSchema.parse(config);
+        return kaiaScanEnvSchema.parse(config);
     } catch (error) {
         if (error instanceof z.ZodError) {
             const errorMessages = error.errors
                 .map((err) => `${err.path.join(".")}: ${err.message}`)
                 .join("\n");
             throw new Error(
-                `Kaiascan configuration validation failed:\n${errorMessages}`
+                `KaiaScan configuration validation failed:\n${errorMessages}`
             );
         }
         throw error;

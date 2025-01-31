@@ -9,9 +9,9 @@ import {
     ModelClass,
     type State,
 } from "@elizaos/core";
-import { validateKaiascanConfig } from "../environment";
+import { validateKaiaScanConfig } from "../environment";
 import { getCurrentBalanceTemplate } from "../templates/getCurrentBalance";
-import { getCurrentBalanceExamples } from "../examples";
+import { getCurrentBalanceExamples } from "../examples/getCurrentBalance";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
 
@@ -28,7 +28,7 @@ export const getCurrentBalanceAction: Action = {
     ],
     description: "Get the current balance for a given address",
     validate: async (runtime: IAgentRuntime) => {
-        await validateKaiascanConfig(runtime);
+        await validateKaiaScanConfig(runtime);
         return true;
     },
     handler: async (
@@ -66,8 +66,8 @@ export const getCurrentBalanceAction: Action = {
         }
 
         // Instantiate API service
-        const config = await validateKaiascanConfig(runtime);
-        const kaiascanService = new KaiaScanService({
+        const config = await validateKaiaScanConfig(runtime);
+        const kaiaScanService = new KaiaScanService({
             apiKey: config.KAIASCAN_API_KEY,
             baseUrl: API_DEFAULTS.BASE_URL.mainnet,
         }
@@ -75,7 +75,7 @@ export const getCurrentBalanceAction: Action = {
 
         // Fetch Account Balance & respond
         try {
-            const kaiascanData = await kaiascanService.getCurrentBalance(
+            const kaiaScanData = await kaiaScanService.getCurrentBalance(
                 String(content?.address || ""),
                 String(content?.network || "mainnet")
             );
@@ -85,8 +85,8 @@ export const getCurrentBalanceAction: Action = {
 
             if (callback) {
                 callback({
-                    text: `The current balance of ${content.address} is ${kaiascanData.balance} KAIA on ${kaiascanData.network}, Let's play and build some MiniDapps on LINE.`,
-                    content: kaiascanData,
+                    text: `The current balance of ${content.address} is ${kaiaScanData.balance} KAIA on ${kaiaScanData.network}, Let's play and build some MiniDapps on LINE.`,
+                    content: kaiaScanData,
                 });
 
                 return true;

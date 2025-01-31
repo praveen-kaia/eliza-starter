@@ -36,7 +36,7 @@ export class AccountService extends BaseService {
       
           return { ...data, network };
         } catch (error) {
-          console.error("Kaiascan API Error:", error.message);
+          console.error("KaiaScan API Error:", error.message);
           throw error;
         }
       }
