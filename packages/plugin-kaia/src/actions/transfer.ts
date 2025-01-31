@@ -1,6 +1,7 @@
 import { ByteArray, formatEther, parseEther, type Hex } from "viem";
 import {
     Action,
+    ActionExample,
     composeContext,
     generateObjectDeprecated,
     HandlerCallback,
