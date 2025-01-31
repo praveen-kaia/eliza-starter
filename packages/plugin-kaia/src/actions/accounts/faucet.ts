@@ -11,10 +11,10 @@ import {
   type State,
 } from "@elizaos/core";
 
-import { initWalletProvider, WalletProvider } from "../providers/wallet";
-import type { Transaction, TransferParams, SupportedChain } from "../types/account";
-import { faucetTemplate } from "../templates/faucet";
-import { faucetExamples } from "../examples/faucet";
+import { initWalletProvider, WalletProvider } from "../../providers/wallet";
+import type { Transaction, TransferParams, SupportedChain } from "../../types/account";
+import { faucetTemplate } from "../../templates/faucet";
+import { faucetExamples } from "../../examples/faucet";
 
 let fromChain: SupportedChain = "kairos";
 let FAUCET_AMOUNT = process.env.KAIA_FAUCET_AMOUNT || "50";
