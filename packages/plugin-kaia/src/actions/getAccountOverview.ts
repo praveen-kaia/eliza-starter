@@ -81,7 +81,6 @@ export const getAccountOverview: Action = {
             elizaLogger.success(
                 `Successfully fetched Account Overview for ${content.address}`
             );
-            console.log(kaiaScanData);
 
             if (callback) {
                 let responseText = `Here are the details \nAccount Details:\n`;

@@ -1,9 +1,11 @@
 import type { Plugin } from "@elizaos/core";
-import { getCurrentBalanceAction } from "./actions/getCurrentBalance";
-import { transferAction } from "./actions/transfer";
-import { getNFTBalanceAction } from "./actions/getNFTBalance";
-import { getFTBalanceDetails } from "./actions/getFTBalanceDetails";
-import { getAccountOverview } from "./actions/getAccountOverview";
+import { getCurrentBalanceAction,
+  getNFTBalanceAction,
+  getFTBalanceDetails,
+  getAccountOverview,
+  transferAction
+} from "./actions";
+
 
 export * as actions from "./actions";
 

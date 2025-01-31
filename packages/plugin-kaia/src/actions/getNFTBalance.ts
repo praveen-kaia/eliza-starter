@@ -18,7 +18,14 @@ import { API_DEFAULTS } from "../constants";
 export const getNFTBalanceAction: Action = {
     name: "GET_NFT_BALANCE",
     similes: [
-        "NFT_BALANCE"
+        "NFT_BALANCE",
+        "NFT",
+        "KAIA_NFT_BALANCE",
+        "CHECK_NFT_BALANCE",
+        "CHECK_NFT",
+        "NFTS",
+        "NON_FUNGIBLE_TOKENS",
+        "NON_FUNGIBLE_TOKEN_BALANCE"
     ],
     description: "Get the NFT balance for a given address",
     validate: async (runtime: IAgentRuntime) => {
@@ -75,7 +82,6 @@ export const getNFTBalanceAction: Action = {
             elizaLogger.success(
                 `Successfully fetched NFT for ${content.address}`
             );
-            console.log(kaiaScanData);
 
             if (callback) {
                 const totalCount = kaiaScanData.paging.total_count;

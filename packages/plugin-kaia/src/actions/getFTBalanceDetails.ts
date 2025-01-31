@@ -18,7 +18,12 @@ import { API_DEFAULTS } from "../constants";
 export const getFTBalanceDetails: Action = {
     name: "GET_FT_BALANCE_DETAILS",
     similes: [
-        "FUNGIBLE_TOKEN_BALANCE"
+        "FUNGIBLE_TOKEN_BALANCE",
+        "FT_BALANCE",
+        "KAIA_FT_BALANCE",
+        "CHECK_FT_BALANCE",
+        "CHECK_FT",
+        "FT"
     ],
     description: "Get the Fungible Balance for a given address",
     validate: async (runtime: IAgentRuntime) => {
@@ -75,7 +80,6 @@ export const getFTBalanceDetails: Action = {
             elizaLogger.success(
                 `Successfully fetched FT for ${content.address}`
             );
-            console.log(kaiaScanData);
 
             if (callback) {
                 const totalCount = kaiaScanData.paging.total_count;

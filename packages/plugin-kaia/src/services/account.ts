@@ -14,7 +14,7 @@ export class AccountService extends BaseService {
         if(!this.config.baseUrl) {
             throw new Error("Invalid network");
         }
-      console.log("this.config", this.config);
+        
         try {
           const url = new URL(`${this.config.baseUrl}/accounts/${accountAddress}`);
       
