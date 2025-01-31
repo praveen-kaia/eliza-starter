@@ -21,6 +21,8 @@ export interface GetAccountResponse {
   property: Record<string, unknown>;
   address: string;
   balance: number;
+  account_type: string;
+  total_transaction_count: number;
 }
 
 import type { Address, Hash } from "viem";
