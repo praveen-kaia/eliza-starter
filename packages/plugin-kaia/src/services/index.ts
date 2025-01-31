@@ -19,4 +19,8 @@ export class KaiaScanService {
     async getCurrentBalance(accountAddress: string) {
         return this.accountService.getCurrentBalance(accountAddress);
     }
+
+    async getNFTBalance(accountAddress: string) {
+        return this.accountService.getNFTBalance(accountAddress);
+    }
 }

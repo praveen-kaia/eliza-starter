@@ -1,4 +1,4 @@
-export const getCurrentBalanceTemplate = `Respond with a JSON object containing the "address" and "network". The address must be a valid Kaia EVM address provided in the input. 
+export const getAddressTemplate = `Respond with a JSON object containing the "address" and "network". The address must be a valid Kaia EVM address provided in the input. 
 
 IMPORTANT: Response must ALWAYS include both "address" and "network" fields.
 
