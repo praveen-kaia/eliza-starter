@@ -12,9 +12,9 @@ import {
 } from "@elizaos/core";
 
 import { initWalletProvider, WalletProvider } from "../providers/wallet";
-import type { Transaction, TransferParams } from "../types";
+import type { Transaction, TransferParams } from "../types/account";
 import { transferTemplate } from "../templates/transfer";
-import { transfer } from "../examples/transfer";
+import { transferExamples } from "../examples/transfer";
 
 // Exported for tests
 export class TransferAction {
@@ -158,6 +158,6 @@ export const transferAction: Action = {
         const privateKey = runtime.getSetting("EVM_PRIVATE_KEY");
         return typeof privateKey === "string" && privateKey.startsWith("0x");
     },
-    examples: transfer as ActionExample[][],
+    examples: transferExamples as ActionExample[][],
     similes: ["SEND_TOKENS", "TOKEN_TRANSFER", "MOVE_TOKENS"],
 };

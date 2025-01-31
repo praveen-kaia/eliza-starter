@@ -1,6 +1,6 @@
 import type { ActionExample } from "@elizaos/core";
 
-export const transfer: ActionExample[][] = [
+export const transferExamples: ActionExample[][] = [
     [
         {
             user: "assistant",
@@ -16,5 +16,5 @@ export const transfer: ActionExample[][] = [
                 action: "SEND_TOKENS",
             },
         },
-    ]
+    ],
 ];

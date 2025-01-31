@@ -27,7 +27,7 @@ import { DeriveKeyProvider, TEEMode } from "@elizaos/plugin-tee";
 import NodeCache from "node-cache";
 import * as path from "path";
 
-import type { SupportedChain } from "../types";
+import type { SupportedChain } from "../types/account";
 
 export class WalletProvider {
   private cache: NodeCache;

@@ -1,4 +1,4 @@
-export const kaiaFaucetTemplate = `You are an AI assistant specialized in processing faucet requests for the Kaia Faucet. Your task is to extract specific information from user messages and format it into a structured JSON response.
+export const faucetTemplate = `You are an AI assistant specialized in processing faucet requests for the Kaia Faucet. Your task is to extract specific information from user messages and format it into a structured JSON response.
 
 First, review the recent messages from the conversation:
 
@@ -32,7 +32,7 @@ After your analysis, provide the final output in a JSON markdown block. The JSON
 \`\`\`
 
 Remember:
-- The recipient address must be a valid Ethereum address starting with "0x".
+- The recipient address must be a valid Kaia address starting with "0x".
 
 Now, process the user's request and provide your response.
 `;
