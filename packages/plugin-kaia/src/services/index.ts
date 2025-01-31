@@ -23,4 +23,8 @@ export class KaiaScanService {
     async getNFTBalance(accountAddress: string) {
         return this.accountService.getNFTBalance(accountAddress);
     }
+
+    async getFTBalanceDetails(accountAddress: string) {
+        return this.accountService.getFTBalanceDetails(accountAddress);
+    }
 }

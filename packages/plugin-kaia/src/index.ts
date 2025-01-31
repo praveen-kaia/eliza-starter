@@ -2,13 +2,14 @@ import type { Plugin } from "@elizaos/core";
 import { getCurrentBalanceAction } from "./actions/getCurrentBalance";
 import { transferAction } from "./actions/transfer";
 import { getNFTBalanceAction } from "./actions/getNFTBalance";
+import { getFTBalanceDetails } from "./actions/getFTBalanceDetails";
 
 export * as actions from "./actions";
 
 export const kaiaPlugin: Plugin = {
   name: "kaia",
   description: "Kaia blockchain integration plugin",
-  actions: [getCurrentBalanceAction, getNFTBalanceAction, transferAction],
+  actions: [getCurrentBalanceAction, getNFTBalanceAction, getFTBalanceDetails, transferAction],
   evaluators: [],
   providers: [],
 };
