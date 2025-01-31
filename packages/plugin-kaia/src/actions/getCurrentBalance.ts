@@ -14,7 +14,6 @@ import { getCurrentBalanceTemplate } from "../templates/getCurrentBalance";
 import { getCurrentBalanceExamples } from "../examples/getCurrentBalance";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
-import { base } from "viem/chains";
 
 export const getCurrentBalanceAction: Action = {
     name: "GET_CURRENT_BALANCE",
