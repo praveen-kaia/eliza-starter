@@ -1,4 +1,3 @@
-import { API_DEFAULTS } from "../constants";
 import type { GetKaiaInfoResponse } from "../types/kaiaInfo";
 import { BaseService } from "./base";
 

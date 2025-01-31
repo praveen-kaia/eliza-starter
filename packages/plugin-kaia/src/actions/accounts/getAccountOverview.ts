@@ -45,7 +45,7 @@ export const getAccountOverviewAction: Action = {
         state = await runtime.updateRecentMessageState(state);
 
         // state -> context
-        const balanceContext = composeContext({
+        const accOverviewContext = composeContext({
             state,
             template: getAddressTemplate,
         });
@@ -53,7 +53,7 @@ export const getAccountOverviewAction: Action = {
         // context -> content
         const content = await generateMessageResponse({
             runtime,
-            context: balanceContext,
+            context: accOverviewContext,
             modelClass: ModelClass.SMALL,
         });
 
@@ -73,7 +73,7 @@ export const getAccountOverviewAction: Action = {
         }
         );
 
-        // Fetch Account Balance & respond
+        // Fetch Account Overview & respond
         try {
             const kaiaScanData = await kaiaScanService.getAccountOverview(
                 String(content?.address || "")
@@ -100,7 +100,7 @@ export const getAccountOverviewAction: Action = {
             elizaLogger.error("Error in GET_ACCOUNT_OVERVIEW handler:", error);
 
             callback({
-                text: `Error fetching balance: ${error.message}`,
+                text: `Error fetching account overview: ${error.message}`,
                 content: { error: error.message },
             });
 
