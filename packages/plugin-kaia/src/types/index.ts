@@ -1,6 +1,28 @@
 export interface GetAccountResponse {
+  results: {
+    contract: {
+      symbol: string;
+      name: string;
+      contract_address: string;
+      decimal: number;
+      verified: boolean;
+      total_supply: number;
+      implementation_address: string;
+    };
+    token_count: number;
+    balance: number;
+  }[];
+  paging: {
+    total_count: number;
+    current_page: number;
+    last: boolean;
+    total_page: number;
+  };
+  property: Record<string, unknown>;
   address: string;
   balance: number;
+  account_type: string;
+  total_transaction_count: number;
 }
 
 import type { Address, Hash } from "viem";

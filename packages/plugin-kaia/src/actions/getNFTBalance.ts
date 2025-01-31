@@ -11,22 +11,23 @@ import {
 } from "@elizaos/core";
 import { validateKaiaScanConfig } from "../environment";
 import { getAddressTemplate } from "../templates/getAddress";
-import { getCurrentBalanceExamples } from "../examples/getCurrentBalance";
+import { getNFTBalanceExamples } from "../examples/getNFTBalance";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
 
-export const getCurrentBalanceAction: Action = {
-    name: "GET_CURRENT_BALANCE",
+export const getNFTBalanceAction: Action = {
+    name: "GET_NFT_BALANCE",
     similes: [
-        "BALANCE",
-        "KAIA_BALANCE",
-        "CHECK_KAIA_BALANCE",
-        "CHECK_BALANCE",
-        "CHECKOUT_BALANCE",
-        "CHECK_FUNDS",
-        "FUNDS"
+        "NFT_BALANCE",
+        "NFT",
+        "KAIA_NFT_BALANCE",
+        "CHECK_NFT_BALANCE",
+        "CHECK_NFT",
+        "NFTS",
+        "NON_FUNGIBLE_TOKENS",
+        "NON_FUNGIBLE_TOKEN_BALANCE"
     ],
-    description: "Get the current balance for a given address",
+    description: "Get the NFT balance for a given address",
     validate: async (runtime: IAgentRuntime) => {
         await validateKaiaScanConfig(runtime);
         return true;
@@ -75,23 +76,30 @@ export const getCurrentBalanceAction: Action = {
 
         // Fetch Account Balance & respond
         try {
-            const kaiaScanData = await kaiaScanService.getCurrentBalance(
+            const kaiaScanData = await kaiaScanService.getNFTBalance(
                 String(content?.address || "")
             );
             elizaLogger.success(
-                `Successfully fetched balance for ${content.address}`
+                `Successfully fetched NFT for ${content.address}`
             );
 
             if (callback) {
+                const totalCount = kaiaScanData.paging.total_count;
+                let responseText = `Your account has ${totalCount} NFTs. They are as follows:\n`;
+            
+                kaiaScanData.results.forEach((item: any, index: number) => {
+                    responseText += `${index + 1}. Contract address - ${item.contract.contract_address} | Token count - ${item.token_count}\n`;
+                });
+            
                 callback({
-                    text: `The current balance of ${content.address} is ${kaiaScanData.balance} KAIA on ${String(content.network)}, Let's play and build some MiniDapps on LINE.`,
+                    text: responseText,
                     content: kaiaScanData,
                 });
-
+            
                 return true;
             }
         } catch (error) {
-            elizaLogger.error("Error in GET_CURRENT_BALANCE handler:", error);
+            elizaLogger.error("Error in GET_NFT_BALANCE handler:", error);
 
             callback({
                 text: `Error fetching balance: ${error.message}`,
@@ -103,5 +111,5 @@ export const getCurrentBalanceAction: Action = {
 
         return;
     },
-    examples: getCurrentBalanceExamples as ActionExample[][],
+    examples: getNFTBalanceExamples as ActionExample[][],
 } as Action;
