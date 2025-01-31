@@ -15,7 +15,7 @@ import { getAccountOverviewExamples } from "../examples/getAccountOverview";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
 
-export const getAccountOverview: Action = {
+export const getAccountOverviewAction: Action = {
     name: "GET_ACCOUNT_OVERVIEW",
     similes: [
         "ACCOUNT_OVERVIEW",

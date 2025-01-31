@@ -15,7 +15,7 @@ import { getFTBalanceDetailsExamples } from "../examples/getFTBalanceDetails";
 import { KaiaScanService } from "../services";
 import { API_DEFAULTS } from "../constants";
 
-export const getFTBalanceDetails: Action = {
+export const getFTBalanceDetailsAction: Action = {
     name: "GET_FT_BALANCE_DETAILS",
     similes: [
         "FUNGIBLE_TOKEN_BALANCE",

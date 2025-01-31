@@ -2,8 +2,8 @@ import type { Plugin } from "@elizaos/core";
 import {
   getCurrentBalanceAction,
   getNFTBalanceAction,
-  getFTBalanceDetails,
-  getAccountOverview,
+  getFTBalanceDetailsAction,
+  getAccountOverviewAction,
   faucetAction,
   getLatestBlockAction,
   transferAction,
@@ -20,9 +20,9 @@ export const kaiaPlugin: Plugin = {
   actions: [
     getLatestBlockAction,
     getNFTBalanceAction,
-    getFTBalanceDetails,
+    getFTBalanceDetailsAction,
     getCurrentBalanceAction,
-    getAccountOverview,
+    getAccountOverviewAction,
     faucetAction,
     transferAction,
     getBlockAction,
