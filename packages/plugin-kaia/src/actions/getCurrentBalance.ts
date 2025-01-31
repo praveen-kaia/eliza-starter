@@ -73,8 +73,6 @@ export const getCurrentBalanceAction: Action = {
         }
         );
 
-        console.log(content.network);
-
         // Fetch Account Balance & respond
         try {
             const kaiaScanData = await kaiaScanService.getCurrentBalance(
