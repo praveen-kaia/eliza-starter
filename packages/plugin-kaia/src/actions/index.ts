@@ -7,4 +7,4 @@ export * from "./accounts/faucet.ts";
 export * from "./transactions/getLatestBlock.ts";
 export * from "./transactions/getBlockInfo.ts";
 export * from "./transactions/getTransactionsByAccount.ts";
-export * from "./transactions/getTransactionsByBlockNumber.ts";
+// export * from "./transactions/getTransactionsByBlockNumber.ts";
