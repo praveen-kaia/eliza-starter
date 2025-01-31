@@ -5,19 +5,18 @@ import { BaseService } from "./base";
 export class AccountService extends BaseService {
 
     getCurrentBalance = async (
-        accountAddress: string,
-        network: string
+        accountAddress: string
       ): Promise<GetAccountResponse> => {
         if (!this.config.apiKey || !accountAddress) {
           throw new Error("Invalid parameters");
         }
 
-        if(!API_DEFAULTS.BASE_URL[network]) {
+        if(!this.config.baseUrl) {
             throw new Error("Invalid network");
         }
-      
+      console.log("this.config", this.config);
         try {
-          const url = new URL(`${API_DEFAULTS.BASE_URL[network]}/accounts/${accountAddress}`);
+          const url = new URL(`${this.config.baseUrl}/accounts/${accountAddress}`);
       
           const response = await fetch(url, {
             method: "GET",
@@ -34,7 +33,7 @@ export class AccountService extends BaseService {
       
           const data = await response.json();
       
-          return { ...data, network };
+          return data ;
         } catch (error) {
           console.error("Kaiascan API Error:", error.message);
           throw error;
