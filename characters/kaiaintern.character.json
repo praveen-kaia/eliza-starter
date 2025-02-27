@@ -616,15 +616,16 @@
   },
   "knowledge": [
     {
-      "directory": "medium",
+      "directory": "kaiawebsite",
       "shared": true
     },
-    {
-      "directory": "website",
-      "shared": true
-    },
+
     {
       "directory": "kaiawave",
+      "shared": true
+    },
+    {
+      "directory": "kaiamedium",
       "shared": true
     }
   ]

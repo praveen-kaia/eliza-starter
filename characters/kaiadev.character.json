@@ -124,7 +124,19 @@
   },
   "knowledge": [
     {
-      "directory": "docs",
+      "directory": "kaiawebsite",
+      "shared": true
+    },
+    {
+      "directory": "kaiadocs",
+      "shared": true
+    },
+    {
+      "directory": "kaiawave",
+      "shared": true
+    },
+    {
+      "directory": "kaiamedium",
       "shared": true
     }
   ]
