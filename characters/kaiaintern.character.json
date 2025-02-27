@@ -1,8 +1,8 @@
 {
-  "name": "kaiaintern",
+  "name": "Kaia Intern",
   "plugins": [],
   "clients": ["twitter"],
-  "modelProvider": "google",
+  "modelProvider": "grok",
   "settings": {
     "ragKnowledge": true,
     "secrets": {},
