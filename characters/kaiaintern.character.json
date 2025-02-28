@@ -2,7 +2,7 @@
   "name": "Kaia Intern",
   "plugins": [],
   "clients": ["twitter"],
-  "modelProvider": "grok",
+  "modelProvider": "google",
   "settings": {
     "ragKnowledge": true,
     "secrets": {},

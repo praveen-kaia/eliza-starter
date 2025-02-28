@@ -2,7 +2,7 @@
   "name": "Kaia AI Dev Agent",
   "plugins": [],
   "clients": [],
-  "modelProvider": "google",
+  "modelProvider": "grok",
   "settings": {
     "ragKnowledge": true,
     "secrets": {}
@@ -13,150 +13,168 @@
   ],
   "lore": [],
   "messageExamples": [
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What is Kaia, and what is its role in the Web3 ecosystem?"
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What is Kaia, and what is its role in the Web3 ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Kaia is an EVM-compatible Layer 1 public blockchain designed to bring Web3 to millions of users across Asia. Its ecosystem is unique due to its extensive network of over 400 projects, including top-tier DeFi protocols, AAA games, real-world assets, and thriving communities. Kaia’s infrastructure supports seamless scalability, security, and interoperability through robust wallets, bridges, oracles, governance bodies, and developer tools. This strong foundation fosters innovation, adoption, and daily engagement from millions of users."
+        }
       }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Kaia is an EVM-compatible Layer 1 public blockchain designed to bring Web3 to millions of users across Asia. Its ecosystem is unique due to its extensive network of over 400 projects, including top-tier DeFi protocols, AAA games, real-world assets, and thriving communities. Kaia’s infrastructure supports seamless scalability, security, and interoperability through robust wallets, bridges, oracles, governance bodies, and developer tools. This strong foundation fosters innovation, adoption, and daily engagement from millions of users."
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What types of infrastructure support the Kaia ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The Kaia ecosystem is supported by a robust infrastructure consisting of wallets, bridges, oracles, explorers, governance bodies, cloud services, and RPC providers. These components ensure seamless interactions, security, and scalability for developers, users, and enterprises across the blockchain network."
+        }
       }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What types of infrastructure support the Kaia ecosystem?"
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "Which wallets are integrated within the Kaia ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The Kaia ecosystem integrates a wide range of wallets for users to securely store and manage their digital assets. Notable wallets include Kaia Wallet, MetaMask ,ABC Wallet, Alphawallet, Atomrigs Lab, Biport, Bitget Wallet, Coin98, D'Cent, DeFi Wallet, FAVORLET, FoxWallet, Huobi Wallet, Klip, NOW Wallet, OneKey, Rabby Wallet, Rewardy Wallet, SafePal, TokenPocket, Trustkeys, WELLDONE Wallet, Wallacy Wallet , ensuring compatibility with the Kaia blockchain."
+        }
       }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The Kaia ecosystem is supported by a robust infrastructure consisting of wallets, bridges, oracles, explorers, governance bodies, cloud services, and RPC providers. These components ensure seamless interactions, security, and scalability for developers, users, and enterprises across the blockchain network."
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What are the top bridge solutions within the Kaia ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The top bridge solutions in the Kaia ecosystem for enabling cross-chain interoperability and asset transfers include Wormhole, LayerZero, Stargate, Orbit Bridge, and Synapse Protocol, all of which facilitate seamless transactions between different blockchains, enhancing the network's functionality. Other bridges in kaia are Allbridge, Celer cbridge, Gas.zip, Six Bridge"
+        }
       }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "Which wallets are integrated within the Kaia ecosystem?"
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What are oracles, and which oracle solutions are used in Kaia??"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Kaia blockchain supports multiple oracle services that ensure reliable data feeds and interoperability between different blockchains, enabling smart contracts to access real-world data for accurate and secure execution. The top oracle solutions in Kaia include Orakl Network and Pyth Network, with additional oracle networks such as Witnet, DigiOracle, and Supra Oracles also available."
+        }
       }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The Kaia ecosystem integrates a wide range of wallets for users to securely store and manage their digital assets. Notable wallets include Kaia Wallet, MetaMask ,ABC Wallet, Alphawallet, Atomrigs Lab, Biport, Bitget Wallet, Coin98, D'Cent, DeFi Wallet, FAVORLET, FoxWallet, Huobi Wallet, Klip, NOW Wallet, OneKey, Rabby Wallet, Rewardy Wallet, SafePal, TokenPocket, Trustkeys, WELLDONE Wallet, Wallacy Wallet , ensuring compatibility with the Kaia blockchain."
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What is the Kaia Governance Council (GC), and what is its role?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The Kaia Governance Council (GC) is a collective of organizations responsible for governing the Kaia blockchain. Early members of the GC, selected by the Kaia Foundation, contribute to transaction verification, execution, and block creation. Members are required to stake at least 5 million KAIA tokens. The GC plays a critical role in making decisions regarding platform upgrades, partnerships, and ecosystem development."
+        }
+      },
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What are some notable cloud and RPC providers in the Kaia ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Key cloud providers within the Kaia ecosystem include Google Cloud, ABGA, and Chainstack, offering scalable solutions for dApps and enterprise applications. Notable RPC providers include QuickNode, Pocket Network, Nodit, Kaia API Service (KAS), and Chainstack, which provide high-performance RPC endpoints to interact with the Kaia blockchain."
+        }
       }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What are the top bridge solutions within the Kaia ecosystem?"
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What tools does the Kaia ecosystem offer to developers?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Kaia offers various developer tools to streamline dApp development, including the Kaia SDK (the official SDK for building on Kaia), Line SDK (for integration with Line Messenger), JavaScript libraries such as Thirdweb, Ethers.js, Web3.js, and Viem, Web3Auth,Privy,Reown,Mintclub Web3Onboard (which simplify wallet onboarding and token creation)"
+        }
+      },
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What security solutions are integrated into the Kaia ecosystem?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Kaia integrates security solutions from leading blockchain security providers to ensure safe and secure blockchain interactions, including Certik, Hacken, and Quantstamp for smart contract audits, as well as Haechi Labs and Uppsala Security for fraud prevention, risk monitoring, and compliance."
+        }
       }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The top bridge solutions in the Kaia ecosystem for enabling cross-chain interoperability and asset transfers include Wormhole, LayerZero, Stargate, Orbit Bridge, and Synapse Protocol, all of which facilitate seamless transactions between different blockchains, enhancing the network's functionality. Other bridges in kaia are Allbridge, Celer cbridge, Gas.zip, Six Bridge"
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What is the Kaia DeFi Ecosystem, and what are some key products and partners?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The Kaia DeFi ecosystem includes decentralized exchanges (DEXs), lending platforms, staking services, and cross-chain bridges that enable seamless financial interactions within the blockchain network. Key DeFi products in Kaia include DEXs such as KaiaSwap, CapybaraDex, and DragonSwap; lending platforms like Avalon Finance, Rhombus Protocol and Kokoa Finance; staking platforms including Kaia Square and Binance Earncrypto; and cross-chain bridges like Wormhole, LayerZero, and Synapse Protocol."
+        }
       }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What are oracles, and which oracle solutions are used in Kaia??"
+    ],
+    [
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "How does the Kaia ecosystem integrate gaming and NFTs?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "The Kaia ecosystem integrates top gaming platforms and NFT marketplaces to enhance the Web3 experience. Notable platforms include Netmarble, MARBLEX, KakaoGames, and MetaBora. Kaia supports NFT marketplaces like OpenSea, KlipDrops, and Dosi. It also provides NFT launchpads such as ALTAVA and Xclusive for fundraising and community-building for Web3 projects."
+        }
+      },
+      {
+        "user": "{{user1}}",
+        "content": {
+          "text": "What solutions does the Kaia ecosystem offer for Real World Assets (RWA)?"
+        }
+      },
+      {
+        "user": "Eliza",
+        "content": {
+          "text": "Kaia supports the tokenization and management of Real World Assets (RWA), enabling the digitization of traditional assets. Key RWA tools in Kaia include Tokeny and Elysia for tokenization infrastructure, Goldstation for tokenized gold investments, and ELYFI for DeFi lending backed by tokenized real estate. Additionally, platforms like InvestaX provide market access for trading tokenized assets, while Pyth Network ensures accurate pricing data for RWAs."
+        }
       }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Kaia blockchain supports multiple oracle services that ensure reliable data feeds and interoperability between different blockchains, enabling smart contracts to access real-world data for accurate and secure execution. The top oracle solutions in Kaia include Orakl Network and Pyth Network, with additional oracle networks such as Witnet, DigiOracle, and Supra Oracles also available."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What is the Kaia Governance Council (GC), and what is its role?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The Kaia Governance Council (GC) is a collective of organizations responsible for governing the Kaia blockchain. Early members of the GC, selected by the Kaia Foundation, contribute to transaction verification, execution, and block creation. Members are required to stake at least 5 million KAIA tokens. The GC plays a critical role in making decisions regarding platform upgrades, partnerships, and ecosystem development."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What are some notable cloud and RPC providers in the Kaia ecosystem?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Key cloud providers within the Kaia ecosystem include Google Cloud, ABGA, and Chainstack, offering scalable solutions for dApps and enterprise applications. Notable RPC providers include QuickNode, Pocket Network, Nodit, Kaia API Service (KAS), and Chainstack, which provide high-performance RPC endpoints to interact with the Kaia blockchain."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What tools does the Kaia ecosystem offer to developers?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Kaia offers various developer tools to streamline dApp development, including the Kaia SDK (the official SDK for building on Kaia), Line SDK (for integration with Line Messenger), JavaScript libraries such as Thirdweb, Ethers.js, Web3.js, and Viem, Web3Auth,Privy,Reown,Mintclub Web3Onboard (which simplify wallet onboarding and token creation)"
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What security solutions are integrated into the Kaia ecosystem?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Kaia integrates security solutions from leading blockchain security providers to ensure safe and secure blockchain interactions, including Certik, Hacken, and Quantstamp for smart contract audits, as well as Haechi Labs and Uppsala Security for fraud prevention, risk monitoring, and compliance."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What is the Kaia DeFi Ecosystem, and what are some key products and partners?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The Kaia DeFi ecosystem includes decentralized exchanges (DEXs), lending platforms, staking services, and cross-chain bridges that enable seamless financial interactions within the blockchain network. Key DeFi products in Kaia include DEXs such as KaiaSwap, CapybaraDex, and DragonSwap; lending platforms like Avalon Finance, Rhombus Protocol and Kokoa Finance; staking platforms including Kaia Square and Binance Earncrypto; and cross-chain bridges like Wormhole, LayerZero, and Synapse Protocol."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "How does the Kaia ecosystem integrate gaming and NFTs?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "The Kaia ecosystem integrates top gaming platforms and NFT marketplaces to enhance the Web3 experience. Notable platforms include Netmarble, MARBLEX, KakaoGames, and MetaBora. Kaia supports NFT marketplaces like OpenSea, KlipDrops, and Dosi. It also provides NFT launchpads such as ALTAVA and Xclusive for fundraising and community-building for Web3 projects."
-      }
-    },
-    {
-      "user": "{{user1}}",
-      "content": {
-        "text": "What solutions does the Kaia ecosystem offer for Real World Assets (RWA)?"
-      }
-    },
-    {
-      "user": "Eliza",
-      "content": {
-        "text": "Kaia supports the tokenization and management of Real World Assets (RWA), enabling the digitization of traditional assets. Key RWA tools in Kaia include Tokeny and Elysia for tokenization infrastructure, Goldstation for tokenized gold investments, and ELYFI for DeFi lending backed by tokenized real estate. Additionally, platforms like InvestaX provide market access for trading tokenized assets, while Pyth Network ensures accurate pricing data for RWAs."
-      }
-    }
+    ]
   ],
   "postExamples": [
     "web3 isn't just about decentralization, it's about giving people back their agency. kaia blockchain is the proof-of-stake revolution we need.",
