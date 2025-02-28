@@ -1,6 +1,9 @@
-# [LINE MiniDapps](https://www.kaia.io/mini-dapps)
+# [Line MiniDapps on Kaia](https://www.kaia.io/mini-dapps)
 
-Looking for some exciting LINE MiniDapps? Here are a few you can try out:
+LINE MiniDapps are decentralized applications (dApps) built on the Kaia blockchain, seamlessly integrated with the LINE ecosystem. These MiniDapps offer users an interactive Web3 experience, enabling gameplay, digital asset ownership, and blockchain-based services within the LINE platform. By leveraging Kaia’s fast and secure blockchain infrastructure, these dApps ensure a smooth and scalable experience for users.
+
+Here are some of the LINE MiniDapps available on Kaia:  
+
 
 | Mini Dapp name              | CTA                                                                    |
 | --------------------------- | ---------------------------------------------------------------------- |
@@ -9,7 +12,7 @@ Looking for some exciting LINE MiniDapps? Here are a few you can try out:
 | Elderglade                  | [Play Now](https://mobile.elderglade.com/)                            |
 | Wizzwoods                   | [Play Now](https://ln-game.wizzwoods.com/)                            |
 | KeitoKun                    | [Play Now](https://game.keitokun.com/)                                |
-| キャプテン翼 -RIVALS- on LINE | [Play Now](https://web-app.line.tsubasa-rivals.com/)                 |
+| Tsubasa RIVALS on LINE      | [Play Now](https://web-app.line.tsubasa-rivals.com/)                 |
 | Frog Defense                | [Play Now](https://play.frogdefense.io/)                              |
 | Heroic Arena                | [Play Now](https://liff.line.me/2006724473-egYwBvpB)                 |
 | SuperZ                      | [Play Now](https://superz.superwalk.io/)                              |
@@ -20,7 +23,7 @@ Looking for some exciting LINE MiniDapps? Here are a few you can try out:
 | Bombie                      | [Play Now](https://bombie.xyz/)                                       |
 | Cattea                      | [Play Now](https://liff.line.me/2006725206-9wRWZmEj)                 |
 | YuliGO                      | [Play Now](https://kaia.yuliverse.com/)                               |
-| TCOM ARENA                  | TBA                                                                    |
+| TCOM ARENA                  | [Play Now](https://bridge.dappportal.io/dapp/N6788fda5dcf5077c4fd640de)|
 | Goblin Master               | [Play Now](https://liff.line.me/2006747054-knWbOzMy)                 |
 | Jumping Peng                | [Play Now](https://jumpingpeng.com/)                                  |
 | TGWiz                       | [Play Now](https://liff.line.me/2006702774-bDDnYDqe)                 |
