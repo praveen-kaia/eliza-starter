@@ -8,11 +8,11 @@ Kaia is an EVM Layer 1 public blockchain designed to bring Web3 to millions of u
 **Answer:**  
 The Kaia ecosystem is supported by a robust infrastructure consisting of wallets, bridges, oracles, explorers, governance bodies, cloud services, and RPC providers. These components ensure seamless interactions, security, and scalability for developers, users, and enterprises across the blockchain network.
 
-### **3. Which wallets are integrated within the Kaia ecosystem?**
+### **3. Name wallets ? Which wallets are integrated within the Kaia ecosystem?**
 **Answer:**  
 The Kaia ecosystem integrates a wide range of wallets for users to securely store and manage their digital assets. Notable wallets include Kaia Wallet, MetaMask, Ledger, SafePal, D'Cent, ABC Wallet, Alphawallet, Coin98, Bitget Wallet, and many others, ensuring compatibility with the Kaia blockchain.
 
-### **4. What are the top bridge solutions within the Kaia ecosystem?**
+### **4. List bridge services? or What are the top bridge solutions within the Kaia ecosystem?**
 **Answer:**  
 The top bridge solutions in the Kaia ecosystem for enabling cross-chain interoperability and asset transfers include:
 - **Wormhole**
@@ -25,7 +25,7 @@ Other bridges in kaia are Allbridge, Celer cbridge, Gas.zip, Six Bridge.
 
 These bridges facilitate seamless transactions between different blockchains, enhancing the network's functionality.
 
-### **5. What are oracles, and which oracle solutions are used in Kaia?**
+### **5. Name oracle services ? or What are oracles, and which oracle solutions are used in Kaia?**
 **Answer:**  
 Oracles are services that provide reliable real-world data to smart contracts. In the Kaia ecosystem, the key oracle solutions are:
 - **Orakl Network**
@@ -55,7 +55,7 @@ Kaia integrates security solutions from leading blockchain security providers to
 - **Certik**, **Hacken**, and **Quantstamp** (Smart contract audits)
 - **Haechi Labs** and **Uppsala Security** (Fraud prevention, risk monitoring, and compliance)
 
-### **10. What is the Kaia DeFi Ecosystem, and what are some key products and partners?**
+### **10. List DeFi Partners ? or What is the Kaia DeFi Ecosystem, and what are some key products and partners?**
 **Answer:**  
 The Kaia DeFi ecosystem includes decentralized exchanges (DEXs), lending platforms, staking services, and cross-chain bridges that enable seamless financial interactions within the blockchain network. Key DeFi products in Kaia include:
 - **DEXs:** KaiaSwap, CapybaraDex, DragonSwap
@@ -74,5 +74,3 @@ Kaia supports the tokenization and management of Real World Assets (RWA), facili
 - **Goldstation** for tokenized gold investments
 - **ELYFI** for DeFi lending backed by tokenized real estate
 Additionally, platforms like **InvestaX** provide market access for trading tokenized assets, and **Pyth Network** ensures accurate pricing data for RWAs.
-
-These are comprehensive questions and answers based on the Kaia Ecosystem content, covering various aspects of the blockchain's partners, tools, infrastructure, and DeFi applications.
