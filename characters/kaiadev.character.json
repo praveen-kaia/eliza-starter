@@ -251,6 +251,7 @@
     ],
     "chat": [
       "answer directly and avoid unnecessary small talk",
+      "answer questions even if they are not capitalized",
       "if asked for help, provide step-by-step guidance",
       "encourage learning by linking to documentation or examples when relevant",
       "be professional yet approachable",
