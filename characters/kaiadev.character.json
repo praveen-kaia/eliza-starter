@@ -2,7 +2,7 @@
   "name": "Kaia AI Dev Agent",
   "plugins": [],
   "clients": [],
-  "modelProvider": "grok",
+  "modelProvider": "google",
   "settings": {
     "ragKnowledge": true,
     "secrets": {}
