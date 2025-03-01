@@ -9,20 +9,20 @@ Kaia is an EVM Layer 1 public blockchain designed to bring Web3 to millions of u
 The Kaia ecosystem relies on a robust infrastructure comprising wallets, bridges, oracles, explorers, governance bodies, cloud services, and RPC providers, ensuring seamless interactions, security, and scalability for developers, users, and enterprises.
 
 ### Wallets  
-Kaia integrates with numerous wallets for secure asset management and transactions. Notable options include: Kaia Wallet, MetaMask, Ledger, SafePal, D'Cent, ABC Wallet, Alphawallet, Atomrigs Lab, Biport, Bitget Wallet, Coin98, DeFi Wallet, FAVORLET, FoxWallet, Huobi Wallet, Klip, NOW Wallet, OneKey, Rabby Wallet, Rewardy Wallet, TokenPocket, Trustkeys, WELLDONE Wallet, Wallacy Wallet, Animal Concerts, Chain Light, CompareNodes, Copper, Core Dot Lab, DECENT Law Firm, East NFT, F10, Fantrie, GoodGang Labs, HYPE.DAY, Haechi Labs, Hashed, Hexlant, Ice Tea Labs, KAIST, Kaia Contracts Wizard, Korea Society of Blockchain, LINE NEXT Corp., Like Lion, MBlock, Matrixport, MetaWeek, QuestN, S2W LAB, SOOHO.IO, SORAMITSU, SOTATEK, Seoul National University, Verichains/VNG, WAME, and YGG Pilipinas.
+Kaia integrates with numerous wallet services for secure asset management and transactions. Notable options include: Kaia Wallet, MetaMask, Ledger, SafePal, D'Cent, ABC Wallet, Alphawallet, Atomrigs Lab, Biport, Bitget Wallet, Coin98, DeFi Wallet, FAVORLET, FoxWallet, Huobi Wallet, Klip, NOW Wallet, OneKey, Rabby Wallet, Rewardy Wallet, TokenPocket, Trustkeys, WELLDONE Wallet, Wallacy Wallet, Animal Concerts, Chain Light, CompareNodes, Copper, Core Dot Lab, DECENT Law Firm, East NFT, F10, Fantrie, GoodGang Labs, HYPE.DAY, Haechi Labs, Hashed, Hexlant, Ice Tea Labs, KAIST, Kaia Contracts Wizard, Korea Society of Blockchain, LINE NEXT Corp., Like Lion, MBlock, Matrixport, MetaWeek, QuestN, S2W LAB, SOOHO.IO, SORAMITSU, SOTATEK, Seoul National University, Verichains/VNG, WAME, and YGG Pilipinas.
 
 ### Bridges  
-Kaia bridges enable cross-chain asset and data transfers for interoperability.  
-- **Top Solutions**: Wormhole, LayerZero, Stargate, Orbit Bridge, Synapse Protocol.  
-- **Other Services**: Allbridge, Celer cBridge, Gas.zip, SiX Bridge.
+Kaia bridge services enable cross-chain asset and data transfers for interoperability.  
+- **Top bridge Solutions**: Wormhole, LayerZero, Stargate, Orbit Bridge, Synapse Protocol.  
+- **Other bridge Services**: Allbridge, Celer cBridge, Gas.zip, SiX Bridge.
 
 ### Oracles  
-Kaia uses oracles to provide reliable data feeds for smart contracts.  
-- **Top Solutions**: Orakl Network, Pyth Network.  
-- **Other Networks**: Witnet, DigiOracle, Supra Oracles.
+Kaia uses oracle services to provide reliable data feeds for smart contracts.  
+- **Top oracle Solutions**: Orakl Network, Pyth Network.  
+- **Other oracle Networks**: Witnet, DigiOracle, Supra Oracles.
 
 ### Explorers  
-Kaia explorers enhance transparency with transaction and network tracking. Options include: Kaiascan, Kaiascope, OKX Explorer, BICScan.
+Kaia explorer apps enhance transparency with transaction and network tracking. Options include: Kaiascan, Kaiascope, OKX Explorer, BICScan.
 
 ### Governance Council (GC)  
 The Kaia Governance Council (GC) governs the blockchain, with early members selected by the Kaia Foundation. Members operate consensus nodes, staking at least 5M KAIA tokens, and include enterprises, DAOs, and builders. Key members: ABGA, AhnLab Blockchain Company, Animoca Brands, Another World, Binance, Bisonai, Bughole, CREDER-ITCEN, CertiK, Cosmostation, DELIGHT, DORA, DWF Labs, EBC - Hanwha Systems, FSN, GoodGang Labs, GroundX, Hashkey, Jump Crypto-Everstake, Kakao Corp, Kakao Entertainment, Kakao Pay, Kommune DAO, Korea Economic Daily, Kracker Labs, LINE NEXT Corp., LINE NEXT Inc., LINE Xenesis, Ludwig Holdings, Maekyung Media Group, MarbleX, Metabora, NEOPIN, NFTBank, Netmarble, Ozys, Presto Labs, SEGA Singapore, SoftBank Corp., Stable Lab, Swapscanner, Sygnum, Verichains/VNG, WEMIX, X2E All. Updates at [square.kaia.io/GC](https://square.kaia.io/GC).
