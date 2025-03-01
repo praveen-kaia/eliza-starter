@@ -2,7 +2,7 @@
   "name": "Kaia AI Dev Agent",
   "plugins": [],
   "clients": [],
-  "modelProvider": "grok",
+  "modelProvider": "google",
   "settings": {
     "ragKnowledge": true,
     "secrets": {}
@@ -269,6 +269,18 @@
   "knowledge": [
     {
       "directory": "kaiawebsite",
+      "shared": true
+    },
+    {
+      "directory": "kaiadocs",
+      "shared": true
+    },
+    {
+      "directory": "kaiawave",
+      "shared": true
+    },
+    {
+      "directory": "kaiamedium",
       "shared": true
     }
   ]
