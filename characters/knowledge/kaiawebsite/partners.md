@@ -968,13 +968,6 @@ Tools-Infrastructure
 
 ---
 
-## Chainlink
-**Description:** Chainlink is the industry-standard Web3 services platform connecting people, businesses, and data with the Web3 world of tomorrow.  
-**Socials:** [Twitter](https://twitter.com/chainlink), [Telegram](https://t.me/chainlinkofficial), [Discord](https://discord.com/invite/chainlink)  
-**External Project Link:** [Website](https://chain.link/)  
-
----
-
 ## Chainspect
 **Description:** Chainspect is a blockchain analytics platform focused on technical metrics for widely used blockchains.  
 **Socials:** [Twitter](https://twitter.com/chainspect_app), [Discord](https://discord.com/invite/nnmJf56XYU)  
